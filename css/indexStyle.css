@@ -1,0 +1,15 @@
+li{
+
+font-family: Verdana, Arial, '宋体';
+line-height: 21px;
+font-size: 15px;
+margin: 0;
+padding: 0;
+text-align: left;
+}
+
+a:link,a:visited {
+    text-decoration: none;   //无装饰
+    color: #000;
+  background: transparent;
+    } 
