@@ -20,11 +20,22 @@
   <!-- End of 访问统计 -->
 </head>
 
-  <body lang="zh-CN" class="reader-black-font" style="background-image:url(.//img/backgroundImg.jpg);margin:0;
+  <body lang="zh-CN" class="reader-black-font" style="  width: 100%;
+            height: 100%;
+            background-image: url(.//img/backgroundImg.jpg);
+            -webkit-background-size:cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;"
+	>
+
+
+
+
+<!--background-image:url(.//img/backgroundImg.jpg);margin:0;
 	background-height:100%;
 	background-width:100%;
-	background-size:contain;
-	>
+	background-size:contain;-->
  <!--         background-position:0% 0%;
     background-size:100%; -->
     <!-- 全局顶部导航栏 -->
@@ -67,118 +78,4 @@
 {title:"BINGBIAN病变（原版）",artist:"Cubi",mp3:"http://music.163.com/song/media/outer/url?id=533259686.mp3",cover:"http:////p1.music.126.net/OVBzkUhphxfWfkji9Owhkw==/109951163118002763.jpg?param=106y106",},
 {title:"Kiss Fight",artist:"Ben Phipps",mp3:"http://music.163.com/song/media/outer/url?id=516750031.mp3",cover:"http://p1.music.126.net/nQZziKHofCIYUtMMmlyCFQ==/18422317323651274.jpg?param=130y130",},
 {title:"陪你环游世界",artist:"贺敬轩",mp3:"http://music.163.com/song/media/outer/url?id=523658992.mp3",cover:"http://p1.music.126.net/3nTP_mmlJCBqIihbHu-AKQ==/109951163084243529.jpg?param=106x106",},
-{title:"爱的就是你",artist:"刘佳",mp3:"http://music.163.com/song/media/outer/url?id=132975.mp3",cover:"http://p4.music.126.net/p7r5eg5x_M7sxRY7ZOUNuw==/45079976751922.jpg?param=106x106",},
-{title:"Welcome to New York",artist:"Karaoke",mp3:"http://music.163.com/song/media/outer/url?id=483855140.mp3",cover:"http://p1.music.126.net/j61ZSVWBjLH1slXl5R5HSQ==/18289276416970859.jpg?param=130y130",},
-{title:"Heartbeat",artist:"Marcus & Martinus",mp3:"http://music.163.com/song/media/outer/url?id=513357140.mp3",cover:"http://p1.music.126.net/I_UDbIsryVrLsLfhgE85PA==/109951163044960154.jpg?param=130y130",},
-];
-  var isRotate = true;
-  var autoplay = false;
-</script>
-<script src="js/player.js"></script>
-<script>
-
-function bgChange(){
-    var lis= $('.lib');
-    for(var i=0; i<lis.length; i+=2)
-    lis[i].style.background = 'rgba(246, 246, 246, 0.5)';
-}
-window.onload = bgChange;
-</script>
-
-<style type="text/css">
-
-	/*标题字体渐变*/
-	.myTitle {
-		font-size: 3rem;   /*大小*/
-		font-style: oblique; /*倾斜*/
-		/*渐变背景*/
-		background-image: -webkit-linear-gradient(left, #3498db, #f47920 10%, #d71345 20%, #f7acbc 30%,
-		#ffd400 40%, #3498db 50%, #f47920 60%, #d71345 70%, #f7acbc 80%, #ffd400 90%, #3498db);
-		color: transparent; /*文字填充色为透明*/
-		-webkit-text-fill-color: transparent;
-		-webkit-background-clip: text;          /*背景剪裁为文字，只将文字显示为背景*/
-		background-size: 200% 100%;            /*背景图片向水平方向扩大一倍，这样background-position才有移动与变化的空间*/
-		/* 动画 */
-		animation: masked-animation 6s infinite linear;
-	}
-	
-	@keyframes masked-animation {
-		0% {
-			background-position: 0 0;   /*background-position 属性设置背景图像的起始位置。*/
-		}
-		100% {
-			background-position: -100% 0;
-		}
-	}
-	
-	/*视频框*/
-	.video {
-		border-radius: 6px; /*这句就是重点，让边框变为圆角*/
-		border: 0px solid #F67; /*让边框变为1px宽度，直线，#CCC颜色*/
-	}
-</style>
-	<link rel="stylesheet" href="css/indexStyle.css">
-	<div style="margin-left:auto;margin-right:auto;word-break:keep-all;white-space:nowrap;">
-		<h1 class="myTitle" style="display:block;width:auto;text-align:center;">We Are Together</h1>
-	</div>
-    
-	<div id="kind" style="display:none;text-align:left;float:left;visiblity:hidden;" >   
-		<h2>我的分类</h2>
-		<ul style="list-style;">
-			<li><a href="index.html" title="文章">文章</a></li>
-			<li><a href="index.html" title="Java">Java</a></li>
-			<li><a href="index.html" title="Python">Python</a></li>
-			<li><a href="index.html" title="Shell">Shell</a></li>
-			<li><a href="index.html" title="SQL">SQL</a></li>
-			<li><a href="index.html" title="Use Tools">Use Tools</a></li>
-			<li><a href="index.html" title="面试集锦">面试集锦</a></li>	
-			<li><a href="index.html" title="精彩人生">精彩人生</a></li>
-			<li><a href="index.html" title="摄影分享">摄影分享</a></li>
-		</ul>
-	</div>
-	<div class="box" style="text-align:center;margin-top:100px;">
-		<div class="pic">
-        <!-- #1 这里或许要改  start -->
-			<video id="video" class="video" width="600" height="auto" controls="controls" preload="none" onclick="videoPlay();" onmouseover="videoPlayback()" src="./we-are-together.mp4">
-            </video>
-            <!-- end -->
-		</div>
-	</div>
-	
-	<h5>点击进入</h5>
-  </body>
-  
-	<script type="text/javascript">
-	
-		//鼠标点击播放，再次点击暂停
-		function videoPlay(){
-			if (video.paused){
-				video.play();
-			}
-			else{
-				video.pause();
-			}		
-		}
-		
-		//鼠标移进去
-		function videoPlayback(){
-			//获取视频标签
-			var video = document.getElementById('video'); 
-			//给视频标签添加缓存播放---video标签属性。
-			video.setAttribute("autoplay","autoplay")
-			//给视频标签添加循环播放---video标签属性。
-			video.setAttribute("loop","loop")
-			video.toggleClass("video")
-			//播放视频
-			video.play();			
-        }
-         
-        //鼠标离开
-        function videoStopped(){
-            //获取视频标签
-            var oDiv = document.getElementById('video'); 
-            //停止播放
-            video.pause();
-        }
-	</script>
-</html>
+{title:"爱的就是你",artist:"刘佳",mp3:"http://music.163.com/song/media/outer/url?id=132975.mp3",cover:"http://p4.music.126.net/p7r5eg5x_M7sxRY7ZOU
